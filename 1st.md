@@ -1,5 +1,9 @@
 # 第一回
-以下、読んだ順序。
+
+## 参考資料
+- [Railsの全体像を知ろう](http://www.atmarkit.co.jp/fcoding/rails/articles/rails3/02/rails302a.html)
+
+## 読んだ順序
 
 - `which rails` >> /Users/Altech/.rvm/gems/ruby-1.9.3-p286/bin/rails
 - `load Gem.bin_path('railties', 'rails', version)` >> gem(railties)/bin/rails
@@ -24,7 +28,7 @@
   - `build_app`で、appから返ってきたRails::Applicationを薄くラッピング）
 - `server.run wrapped_app, options, &blk`でサーバー起動！
 
-ここまででサーバー起動したのでそこから。
+ここまででサーバー起動したので次回そこから。
 
     def server
       @_server ||= Rack::Handler.get(options[:server]) || Rack::Handler.default(options)
